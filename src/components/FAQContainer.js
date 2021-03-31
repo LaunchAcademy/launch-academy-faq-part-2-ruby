@@ -1,9 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Question from './Question';
 
 const FAQContainer = (props) => {
   const [questions, setQuestions] = useState([])
   const [selectedQuestion, setSelectedQuestion] = useState([])
+
+  //part 1
+  //add get fetch
+  useEffect(() => {
+  }, [])
+
+  //part 2
+  //add post fetch
+  //pass post fetch to question form
 
   const toggleQuestionSelect = (id) => {
     if(id === selectedQuestion) {
